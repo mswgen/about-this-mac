@@ -1,0 +1,16 @@
+* {
+    font-family: -apple-system, "Apple SD Gothic Neo", "Helvetica Neue", "Ubuntu", "Noto Sans KR", "맑은 고딕", "Malgun Gothic", sans-serif;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a {
+    text-decoration-line: none;
+    color: inherit;
+}
+
+#result {
+    word-break: break-all;
+}

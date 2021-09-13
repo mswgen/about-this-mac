@@ -1,0 +1,35 @@
+{
+  "name": "about-this-mac",
+  "version": "1.0.0",
+  "description": "\"About this Mac\" generator",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "run-script-os",
+    "build:win32": "rd /s /q dist && tsc",
+    "build:darwin:linux:android": "rm -rf dist && tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mswgen/about-this-mac.git"
+  },
+  "keywords": [
+    "mac",
+    "about-this-mac",
+    "generator"
+  ],
+  "author": "mswgen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mswgen/about-this-mac/issues"
+  },
+  "homepage": "https://github.com/mswgen/about-this-mac#readme",
+  "devDependencies": {
+    "@types/node": "^16.9.1",
+    "run-script-os": "^1.1.6",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0"
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"이 Mac에 관하여" 생성기</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" async defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+</head>
+
+<body>
+    <h1>"이 Mac에 관하여" 생성기</h1>
+    <main>
+        <div>
+            <label for="model"> 모델 선택</label>
+            <select id="model">
+                <option value="MacBook Pro (13-inch, 2020, Thunderbolt 3 포트 2개)" selected>MacBook Pro (13-inch, 2020,
+                    Thunderbolt 3 포트 2개)</option>
+                <option value="MacBook Pro (13-inch, 2020, Thunderbolt 3 포트 4개)">MacBook Pro (13-inch, 2020, Thunderbolt
+                    3 포트 4개)</option>
+                <option value="MacBook Pro (16-inch, 2019)">MacBook Pro (16-inch, 2019)</option>
+                <option value="MacBook Pro (13-inch, 2019, Thunderbolt 3 포트 2개)">MacBook Pro (13-inch, 2019, Thunderbolt
+                    3 포트 2개)</option>
+                <option value="MacBook Pro (15-inch, 2019)">MacBook Pro (15-inch, 2019)</option>
+                <option value="MacBook Pro (13-inch, 2019, Thunderbolt 3 포트 4개)">MacBook Pro (13-inch, 2019, Thunderbolt
+                    3 포트 4개)</option>
+                <option value="MacBook Pro (15-inch, 2018)">MacBook Pro (15-inch, 2018)</option>
+                <option value="MacBook Pro (13-inch, 2018, Thunderbolt 3 포트 4개)">MacBook Pro (13-inch, 2018, Thunderbolt
+                    3 포트 4개)</option>
+                <option value="MacBook Pro (15-inch, 2017)">MacBook Pro (15-inch, 2017)</option>
+                <option value="MacBook Pro (13-inch, 2017, Thunderbolt 3 포트 4개)">MacBook Pro (13-inch, 2017, Thunderbolt
+                    3 포트 4개)</option>
+                <option value="MacBook Pro (13-inch, 2017, Thunderbolt 3 포트 2개)">MacBook Pro (13-inch, 2017, Thunderbolt
+                    3 포트 2개)</option>
+                <option value="MacBook Pro (15-inch, 2016)">MacBook Pro (15-inch, 2016)</option>
+                <option value="MacBook Pro (13-inch, 2016, Thunderbolt 3 포트 4개)">MacBook Pro (13-inch, 2016, Thunderbolt
+                    3 포트 4개)</option>
+                <option value="MacBook Pro (13-inch, 2016, Thunderbolt 3 포트 2개)">MacBook Pro (13-inch, 2016, Thunderbolt
+                    3 포트 2개)</option>
+                <option value="MacBook Pro (Retina, 15-inch, Mid 2015)">MacBook Pro (Retina, 15-inch, Mid 2015)</option>
+                <option value="MacBook Pro (Retina, 13-inch, Early 2015)">MacBook Pro (Retina, 13-inch, Early 2015)
+                </option>
+                <option value="MacBook Pro (Retina, 15-inch, Mid 2014)">MacBook Pro (Retina, 15-inch, Mid 2014)</option>
+                <option value="MacBook Pro (Retina, 13-inch, Mid 2014)">MacBook Pro (Retina, 13-inch, Mid 2014)</option>
+                <option value="MacBook Pro (Retina, 15-inch, Late 2013)">MacBook Pro (Retina, 15-inch, Late 2013)
+                </option>
+                <option value="MacBook Pro (Retina, 13-inch, Late 2013)">MacBook Pro (Retina, 13-inch, Late 2013)
+                </option>
+                <option value="MacBook Air (Retina, 13-inch, 2020)">MacBook Air (Retina, 13-inch, 2020)</option>
+                <option value="MacBook Air (Retina, 13-inch, 2019)">MacBook Air (Retina, 13-inch, 2019)</option>
+                <option value="MacBook Air (Retina, 13-inch, 2018)">MacBook Air (Retina, 13-inch, 2018)</option>
+                <option value="MacBook Air (13-inch, 2017)">MacBook Air (13-inch, 2017)</option>
+                <option value="MacBook Air (13-inch, Early 2015)">MacBook Air (13-inch, Early 2015)</option>
+                <option value="MacBook Air (11-inch, Early 2015)">MacBook Air (11-inch, Early 2015)</option>
+                <option value="MacBook Air (13-inch, Early 2014)">MacBook Air (13-inch, Early 2014)</option>
+                <option value="MacBook Air (11-inch, Early 2014)">MacBook Air (11-inch, Early 2014)</option>
+                <option value="MacBook Air (13-inch, Mid 2013)">MacBook Air (13-inch, Mid 2013)</option>
+                <option value="MacBook Air (11-inch, Mid 2013)">MacBook Air (11-inch, Mid 2013)</option>
+                <option value="MacBook (Retina, 12-inch, 2017)">MacBook (Retina, 12-inch, 2017)</option>
+                <option value="MacBook (Retina, 12-inch, Early 2016)">MacBook (Retina, 12-inch, Early 2016)</option>
+                <option value="MacBook (Retina, 12-inch, Early 2015)">MacBook (Retina, 12-inch, Early 2015)</option>
+            </select>
+            <br><br>
+            <label for="version">macOS 버전 선택</label>
+            <select id="version">
+                <option value="11.0 (20A2411)">11.0 (20A2411)</option>
+                <option value="11.0.1 (20B29)">11.0.1 (20B29)</option>
+                <option value="11.0.1 (20B50)">11.0.1 (20B50)</option>
+                <option value="11.1 (20C69)">11.1 (20C69)</option>
+                <option value="11.2 (20D64)">11.2 (20D64)</option>
+                <option value="11.2.1 (20D74)">11.2.1 (20D74)</option>
+                <option value="11.2.1 (20D75)">11.2.1 (20D75)</option>
+                <option value="11.2.2 (20D80)">11.2.2 (20D80)</option>
+                <option value="11.2.3 (20D91)">11.2.3 (20D91)</option>
+                <option value="11.3 (20E232)">11.3 (20E232)</option>
+                <option value="11.3.1 (20E241)">11.3.1 (20E241)</option>
+                <option value="11.4 (20F71)">11.4 (20F71)</option>
+                <option value="11.5 (20G71)">11.5 (20G71)</option>
+                <option value="11.5.1 (20G80)">11.5 (20G80)</option>
+                <option value="11.5.2 (20G95)" selected>11.5.2 (20G95)</option>
+            </select>
+            <br><br>
+            <label for="cpu">CPU 선택</label>
+            <select id="cpu">
+                <option value="Intel Core i3">Intel Core i3</option>
+                <option value="Intel Core i5" selected>Intel Core i5</option>
+                <option value="Intel Core i7">Intel Core i7</option>
+                <option value="Intel Core i9">Intel Core i9</option>
+                <option value="Intel Xeon">Intel Xeon</option>
+            </select>
+            <br><br>
+            <label for="cpufreq">CPU 클럭(숫자만)</label>
+            <input type="text" id="cpufreq" value="2.9">
+            <br><br>
+            <label for="cpucore">CPU 코어 수</label>
+            <input type="number" id="cpucore" min="1" max="99" value="6">
+            <br><br>
+            <label for="mem">RAM 용량(GB)</label>
+            <input type="number" id="mem" min="1" max="99" value="16">
+            <br><br>
+            <label for="memspeed">RAM 속도(MHz)</label>
+            <input type="number" id="memspeed" min="1000" max="9999" value="2666">
+            <br><br>
+            <label for="memtype">RAM 유형</label>
+            <select id="memtype">
+                <option value="DDR2">DDR2</option>
+                <option value="DDR3">DDR3</option>
+                <option value="DDR4" selected>DDR4</option>
+            </select>
+            <br><br>
+            <label for="gpu">GPU 모델</label>
+            <input type="text" id="gpu" value="Intel UHD Graphics 630">
+            <br><br>
+            <label for="gpumem">GPU VRAM 용량</label>
+            <select id="gpumem">
+                <option value="0,MB">0 MB</option>
+                <option value="1,MB">1 MB</option>
+                <option value="3,MB">3 MB</option>
+                <option value="7,MB">7 MB</option>
+                <option value="128,MB">128 MB</option>
+                <option value="256,MB">256 MB</option>
+                <option value="1536,MB">1536 MB</option>
+                <option value="2048,MB">2048 MB</option>
+                <option value="1,GB">1 GB</option>
+                <option value="2,GB">2 GB</option>
+                <option value="3,GB">3 GB</option>
+                <option value="4,GB" selected>4 GB</option>
+                <option value="5,GB">5 GB</option>
+                <option value="6,GB">6 GB</option>
+                <option value="7,GB">7 GB</option>
+                <option value="8,GB">8 GB</option>
+                <option value="9,GB">9 GB</option>
+                <option value="10,GB">10 GB</option>
+                <option value="11,GB">11 GB</option>
+                <option value="12,GB">12 GB</option>
+                <option value="13,GB">13 GB</option>
+                <option value="14,GB">14 GB</option>
+                <option value="15,GB">15 GB</option>
+                <option value="16,GB">16 GB</option>
+            </select>
+            <br><br>
+            <label for="serial">일련 번호</label>
+            <input type="text" id="serial" value="">
+        </div>
+        <div>
+            <h2>링크</h2>
+            <a id="result"></a>
+        </div>
+    </main>
+</body>
+
+</html>
