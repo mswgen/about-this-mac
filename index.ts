@@ -71,7 +71,7 @@ const server = http.createServer(async (req, res) => {
                 ctx.font = '22px "Apple SD Gothic Neo"'
                 ctx.fillText(`${properties.cpuCore == 1 ? '싱글 ' : properties.cpuCore == 2 ? '듀얼 ': properties.cpuCore == 4 ? '쿼드 ' : properties.cpuCore}코어 ${properties.cpu}`, 691, 339);
                 ctx.font = '22px "SF Pro"';
-                ctx.fillText(properties.mem.toString(), 581 + properties.mem.toString().length * 10, 376);
+                ctx.fillText(properties.mem.toString(), 601 - properties.mem.toString().length * 10, 376);
                 ctx.fillText(properties.memSpeed.toString(), 646, 376);
                 ctx.fillText(properties.memType, 761, 376);
                 ctx.fillText(`${properties.gpu} ${properties.gpuMem.toString()} ${properties.gpuMemType}`, 581, 413);
