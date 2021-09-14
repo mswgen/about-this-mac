@@ -3,7 +3,7 @@ import canvas from 'canvas';
 import fs from 'fs';
 import url from 'url';
 interface ImageProperties {
-    freq: number,
+    freq: string,
     cpuCore: number,
     cpu: 'Intel Core i3' | 'Intel Core i5' | 'Intel Core i7' | 'Intel Core i9' | 'Intel Xeon',
     mem: number,
@@ -67,7 +67,7 @@ const server = http.createServer(async (req, res) => {
                 ctx.font = '22px "Apple SD Gothic Neo"'
                 ctx.fillText(properties.model, 509, 300);
                 ctx.font = '22px "SF Pro"';
-                ctx.fillText(properties.freq.toString(), 600, 338);
+                ctx.fillText(properties.freq, 600, 338);
                 ctx.font = '22px "Apple SD Gothic Neo"'
                 ctx.fillText(`${properties.cpuCore == 1 ? '싱글 ' : properties.cpuCore == 2 ? '듀얼 ': properties.cpuCore == 4 ? '쿼드 ' : properties.cpuCore}코어 ${properties.cpu}`, 691, 339);
                 ctx.font = '22px "SF Pro"';

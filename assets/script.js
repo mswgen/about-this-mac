@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 });
 function onChange() {
     aboutThisMacOps = {
-        freq: Number(document.querySelector('#cpufreq').value),
+        freq: document.querySelector('#cpufreq').value,
         cpuCore: Number(document.querySelector('#cpucore').value),
         cpu: document.querySelector('#cpu').value,
         mem: Number(document.querySelector('#mem').value),
