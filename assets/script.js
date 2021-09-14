@@ -19,7 +19,7 @@ function onChange() {
         serial: document.querySelector('#serial').value,
         version: document.querySelector('#version').value,
         model: document.querySelector('#model').value,
-        type: document.querySelector('#model').value.startsWith('MacBook Pro') ? 'MacBook Pro' : document.querySelector('#serial').value.startsWith('MacBook Air') ? 'MacBook Air' : document.querySelector('#serial').value.startsWith('MacBook') ? 'MacBook' : document.querySelector('#serial').value.startsWith('Mac Mini') ? 'Mac Mini' : document.querySelector('#serial').value.startsWith('iMac') ? 'iMac' : document.querySelector('#serial').value.startsWith('iMac Pro') ? 'iMac Pro' : document.querySelector('#serial').value.startsWith('Mac Pro') ? 'Mac Pro' : 'Mac'
+        type: document.querySelector('#model').value.startsWith('MacBook Pro') ? 'MacBook Pro' : (document.querySelector('#model').value.startsWith('MacBook Air') ? 'MacBook Air' : (document.querySelector('#model').value.startsWith('MacBook') ? 'MacBook' : (document.querySelector('#model').value.startsWith('Mac Mini') ? 'Mac Mini' : (document.querySelector('#model').value.startsWith('iMac') ? 'iMac' : (document.querySelector('#model').value.startsWith('iMac Pro') ? 'iMac Pro' : (document.querySelector('#model').value.startsWith('Mac Pro') ? 'Mac Pro' : 'Mac'))))))
     }
     document.querySelector('#result').setAttribute('href', `${location.origin}/image?d=${btoa(encodeURIComponent(JSON.stringify(aboutThisMacOps)))}`);
     document.querySelector('#result').innerHTML = `${location.origin}/image?d=${btoa(encodeURIComponent(JSON.stringify(aboutThisMacOps)))}`;
